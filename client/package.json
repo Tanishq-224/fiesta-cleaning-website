@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "deploy:surge": "npm run build && npx surge@0.24.6 out fiesta-cleaning-san-antonio.surge.sh"
+    "deploy:surge": "npm run build && npx surge@0.24.6 ./out"
   },
   "dependencies": {
     "gsap": "^3.15.1",
