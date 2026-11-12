@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@theme inline {
+  --color-warm-ivory: #faf3ed;
+  --color-soft-taupe: #d5ccc4;
+  --color-muted-beige: #a89583;
+  --color-dusty-terracotta: #b77c64;
+  --color-dark-espresso: #3b322b;
+  --color-near-black: #11100e;
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, "Times New Roman",
+    serif;
+
+  --breakpoint-w480: 30rem;
+  --breakpoint-w600: 37.5rem;
+  --breakpoint-w768: 48rem;
+  --breakpoint-w1024: 64rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-color: var(--color-warm-ivory);
+    color: var(--color-near-black);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-dusty-terracotta);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

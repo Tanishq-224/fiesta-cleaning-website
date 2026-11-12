@@ -863,21 +863,21 @@ Work in this order. Do not skip ahead while foundational work is broken.
 Update this checklist continuously. Use `[x]` only after verification. Use `[ ]` for incomplete work and `[!]` for blocked/dependent work.
 
 ### Project setup
-- [ ] Phase 0 repository audit completed
-- [ ] Existing routes/components/assets reviewed
-- [ ] Dependencies and package versions verified
-- [ ] Build/lint/typecheck commands verified
-- [ ] Master brief added to repository
+- [x] Phase 0 repository audit completed
+- [x] Existing routes/components/assets reviewed
+- [x] Dependencies and package versions verified
+- [x] Build/lint/typecheck commands verified
+- [x] Master brief added to repository
 
 ### Design system
-- [ ] Manrope configured
-- [ ] Cormorant Garamond configured
-- [ ] Six approved color tokens configured
-- [ ] Shared container system implemented
-- [ ] Typography scale implemented
-- [ ] Spacing system implemented
-- [ ] Buttons and interactive states implemented
-- [ ] Icon system standardized
+- [x] Manrope configured
+- [x] Cormorant Garamond configured
+- [x] Six approved color tokens configured
+- [x] Shared container system implemented
+- [x] Typography scale implemented
+- [x] Spacing system implemented
+- [x] Buttons and interactive states implemented
+- [x] Icon system standardized
 - [ ] Image conventions documented/implemented
 
 ### Header and hero
@@ -920,13 +920,13 @@ Update this checklist continuously. Use `[x]` only after verification. Use `[ ]`
 - [ ] Mobile navigation verified
 
 ### Animation QA
-- [ ] GSAP/ScrollTrigger setup
+- [x] GSAP/ScrollTrigger setup
 - [ ] Motion interactions
-- [ ] Lenis setup and ScrollTrigger integration
-- [ ] Animation cleanup on unmount
+- [x] Lenis setup and ScrollTrigger integration
+- [x] Animation cleanup on unmount
 - [ ] No conflicting animation ownership
 - [ ] No scroll jumps or stuck pins
-- [ ] Reduced-motion support
+- [x] Reduced-motion support
 - [ ] Mobile animation behavior verified
 
 ### Content and assets
@@ -955,10 +955,10 @@ Update this checklist continuously. Use `[x]` only after verification. Use `[ ]`
 - [ ] Structured data uses verified facts only
 - [ ] Images optimized
 - [ ] Core Web Vitals measured
-- [ ] TypeScript check passes
-- [ ] Lint passes
+- [x] TypeScript check passes
+- [x] Lint passes
 - [ ] Tests pass
-- [ ] Production build passes
+- [x] Production build passes
 - [ ] Browser console clean
 - [ ] All links and CTAs verified
 - [ ] Final content audit completed
