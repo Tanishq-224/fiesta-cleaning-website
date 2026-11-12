@@ -43,7 +43,6 @@ export function AppProviders({ children }: AppProvidersProps) {
       gsap.ticker.remove(tickerCallback);
       lenis.off("scroll", onLenisScroll);
       lenis.destroy();
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 

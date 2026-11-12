@@ -10,6 +10,7 @@ type SectionHeadingProps = {
   description?: ReactNode;
   className?: string;
   align?: "left" | "center";
+  tone?: "light" | "dark";
 };
 
 export function SectionHeading({
@@ -19,7 +20,10 @@ export function SectionHeading({
   description,
   className,
   align = "left",
+  tone = "light",
 }: SectionHeadingProps) {
+  const isDark = tone === "dark";
+
   return (
     <div
       className={cn(
@@ -29,20 +33,31 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? (
-        <p className="font-sans text-xs font-semibold tracking-[0.18em] text-muted-beige uppercase">
+        <p
+          className={cn(
+            "font-sans text-xs font-semibold tracking-[0.18em] uppercase",
+            isDark ? "text-soft-taupe" : "text-muted-beige",
+          )}
+        >
           {eyebrow}
         </p>
       ) : null}
       <Heading
         className={cn(
-          "font-sans text-[clamp(1.75rem,4vw,3rem)] leading-tight font-extrabold text-near-black",
+          "font-sans text-[clamp(1.75rem,4vw,3rem)] leading-tight font-extrabold",
+          isDark ? "text-warm-ivory" : "text-near-black",
           eyebrow && "mt-3",
         )}
       >
         {title}
       </Heading>
       {description ? (
-        <div className="mt-4 max-w-prose font-sans text-base font-normal text-dark-espresso/90">
+        <div
+          className={cn(
+            "mt-4 max-w-prose font-sans text-base font-normal",
+            isDark ? "text-soft-taupe" : "text-dark-espresso/90",
+          )}
+        >
           {description}
         </div>
       ) : null}

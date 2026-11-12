@@ -1,51 +1,43 @@
-import { Sparkles } from "lucide-react";
-import { Container } from "@/components/layout/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { CleaningChecklistSection } from "@/components/sections/CleaningChecklistSection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import { GallerySection } from "@/components/sections/GallerySection";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { ProcessSection } from "@/components/sections/ProcessSection";
+import { ReviewsSection } from "@/components/sections/ReviewsSection";
+import { ServiceAreasSection } from "@/components/sections/ServiceAreasSection";
+import { ServicesSection } from "@/components/sections/ServicesSection";
+import { TrustSection } from "@/components/sections/TrustSection";
+import { WhyChooseUsSection } from "@/components/sections/WhyChooseUsSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-warm-ivory">
-      <Container className="flex min-h-screen flex-col justify-center py-16">
-        <Sparkles
-          aria-hidden
-          className="mb-6 h-6 w-6 text-dusty-terracotta"
-          strokeWidth={1.75}
-        />
-        <SectionHeading
-          as="h1"
-          eyebrow="Project foundation"
-          title="Fiesta Cleaning"
-          description={
-            <p>
-              Initial website setup is in place. Homepage sections will be
-              implemented after this foundation is approved.
-            </p>
-          }
-        />
-        <p className="mt-8 font-serif text-2xl text-dark-espresso italic">
-          Premium, editorial cleaning services for San Antonio.
-        </p>
-        <ul className="mt-10 grid max-w-xl grid-cols-2 gap-3 text-sm text-dark-espresso w480:grid-cols-3">
-          <li className="border border-soft-taupe bg-warm-ivory px-3 py-2">
-            Warm Ivory
-          </li>
-          <li className="border border-soft-taupe bg-soft-taupe px-3 py-2">
-            Soft Taupe
-          </li>
-          <li className="border border-muted-beige bg-muted-beige px-3 py-2 text-near-black">
-            Muted Beige
-          </li>
-          <li className="border border-dusty-terracotta bg-dusty-terracotta px-3 py-2 text-warm-ivory">
-            Dusty Terracotta
-          </li>
-          <li className="border border-dark-espresso bg-dark-espresso px-3 py-2 text-warm-ivory">
-            Dark Espresso
-          </li>
-          <li className="border border-near-black bg-near-black px-3 py-2 text-warm-ivory">
-            Near Black
-          </li>
-        </ul>
-      </Container>
-    </main>
+    <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[60] focus:bg-warm-ivory focus:px-4 focus:py-2 focus:text-near-black"
+      >
+        Skip to content
+      </a>
+      <SiteHeader />
+      <main id="main-content">
+        <HeroSection />
+        <TrustSection />
+        <AboutSection />
+        <ServicesSection />
+        <WhyChooseUsSection />
+        <CleaningChecklistSection />
+        <ProcessSection />
+        <ServiceAreasSection />
+        <GallerySection />
+        <ReviewsSection />
+        <FAQSection />
+        <FinalCTASection />
+      </main>
+      <SiteFooter />
+    </>
   );
 }

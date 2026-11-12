@@ -13,7 +13,12 @@ export function Container({
   as: Component = "div",
 }: ContainerProps) {
   return (
-    <Component className={cn("mx-auto w-[min(90%,1280px)]", className)}>
+    <Component
+      className={cn(
+        "mx-auto w-full max-w-[1280px] px-[clamp(1.25rem,5vw,3.75rem)]",
+        className,
+      )}
+    >
       {children}
     </Component>
   );

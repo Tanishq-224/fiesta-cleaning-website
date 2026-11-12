@@ -17,14 +17,17 @@
   --breakpoint-w600: 37.5rem;
   --breakpoint-w768: 48rem;
   --breakpoint-w1024: 64rem;
+  --breakpoint-w1280: 80rem;
 }
 
 @layer base {
   html {
     scroll-behavior: auto;
+    scroll-padding-top: 5.5rem;
   }
 
   body {
+    overflow-x: hidden;
     background-color: var(--color-warm-ivory);
     color: var(--color-near-black);
     font-family: var(--font-sans);
