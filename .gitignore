@@ -44,3 +44,6 @@ Thumbs.db
 # Cache
 .turbo
 .eslintcache
+
+# Local design/development brief — keep on disk, do not publish
+FIESTA_PROJECT_MASTER.md

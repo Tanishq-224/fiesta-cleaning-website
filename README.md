@@ -6,15 +6,14 @@ Premium, editorial-style cleaning service website for Fiesta Cleaning, serving S
 
 This project is built with Next.js (App Router), TypeScript, Tailwind CSS, GSAP, Motion, and Lenis.
 
-The design and development source of truth is documented in [`FIESTA_PROJECT_MASTER.md`](./FIESTA_PROJECT_MASTER.md).
+Design direction and implementation requirements are maintained locally as a project brief and are not published in this repository.
 
 ## Project Structure
 
 ```text
 Fiesta Project/
-├── FIESTA_PROJECT_MASTER.md   # Project master brief and single source of truth
-├── README.md                  # Root documentation
-├── .gitignore                 # Root gitignore rules
+├── README.md
+├── .gitignore
 └── client/                    # Next.js frontend application
 ```
 
